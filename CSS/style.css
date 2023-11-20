@@ -668,7 +668,7 @@ margin-top: 102px;
 }
 
 .emblems__city{
-    transition: color 200ms ease, transform 200ms;
+    transition: color 200ms ease, transform 200ms ease;
     transform: none;
     color: #CCC;
     text-align: center;

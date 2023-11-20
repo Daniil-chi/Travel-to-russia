@@ -653,6 +653,8 @@ margin-top: 102px;
 }
 
 .emblems__item{
+    transition: transform 200ms ease;
+    transform: translateY(0px);
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -660,7 +662,14 @@ margin-top: 102px;
     gap: 35px;
 }
 
+.emblems__item:hover{
+    transition: transform ease 200ms;
+    transform: translateY(-10px);
+}
+
 .emblems__city{
+    transition: color 200ms ease, transform 200ms ease;
+    transform: none;
     color: #CCC;
     text-align: center;
     font-family: Inter;
@@ -671,7 +680,8 @@ margin-top: 102px;
 }
 
 .emblems__city:hover{
-    transition: 0.5s;
+    transition: color 200ms ease, transform 200ms;
+    transform: translateY(-10px);
     color:orange;
 }
 
